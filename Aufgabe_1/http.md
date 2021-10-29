@@ -125,3 +125,14 @@ Nun kann die HTTP anfrage an den Server gerichtet werden.
 
 Der Server interpretiert nun die Anfrage und sendet eine Response nachricht, welche dann vom Empfänger gelesen werden kann.
 
+***
+
+## c) ##
+
+Beispiel Wikipedia Artikel: https://de.wikipedia.org/wiki/Herborn#Geschichte
+
+### Bestandteile ###
+
+| Protokoll | Host              | Pfad          | Parameter | Anker         |
+|:---------:|:-----------------:|:-------------:|:---------:|:-------------:|
+| https     |de.wikipedia.org   |wiki/Herborn   | -/-       | #Geschichte   |
