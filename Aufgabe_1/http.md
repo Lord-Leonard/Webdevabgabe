@@ -101,7 +101,7 @@ Diese Daten werden, wie die Paramelter der URL in 'Key-Value Paaren' angegeben.
 
 Zudem enthält der Head die Informationen darüber, was von der Website "verlangt" oder erwartet wird in form der URL. 
 
-Die URL (Universal Resource Locator) besteht aus 3 Teilen:
+Die URL (Uniform Resource Locator) besteht aus 3 Teilen:
 1. Dem Host 
     - Beispiel: www.google.de
 2. Einem Pfad zur gewünschten Datei oder einer aktion auf der Website
@@ -129,10 +129,45 @@ Der Server interpretiert nun die Anfrage und sendet eine Response nachricht, wel
 
 ## c) ##
 
-Beispiel Wikipedia Artikel: https://de.wikipedia.org/wiki/Herborn#Geschichte
+URL steht für Uniform Resource Locator, sprich eine einheitliche Art Resourcen (Datein) im Internet zu Lokalisieren. 
+Der Aufbau einer URL wird an folgendem Beispiel erörtert.
+
+Beispiel Wikipedia URL: https://de.wikipedia.org/wiki/Herborn#Geschichte
 
 ### Bestandteile ###
 
 | Protokoll | Host              | Pfad          | Parameter | Anker         |
 |:---------:|:-----------------:|:-------------:|:---------:|:-------------:|
 | https     |de.wikipedia.org   |wiki/Herborn   | -/-       | #Geschichte   |
+
+### Protokoll ###
+
+HTTP / HTTPS steht für Hypertext Transfer Protokoll, welches üblicherweise zur übermittlung von Websiten verwendet wird. 
+Moderne Browser sind jedoch auch dazu in der Lage Protokolle wie zum Beispiel 'mailto:' zu interpretieren und ein Mail Programm zu öffnen. 
+
+### Host ###
+
+Der Host ist der Bereitsteller der angeforderten Resource, also der Server auf dem die angeforderte Datei liegt. 
+
+In diesem Beisiel der Deutschsprachige wikipedia Server.
+
+### Pfad ###
+
+Der Pfad definiert den genauen Ort der gewünschten Datei. 
+
+In diesem Beispiel eine Date im Verzeichnis 'Wiki' mit dem Namen 'Herborn'
+
+### Parameter ###
+
+Parameter werden wie oben schon beschrieben in 'Key-Value Paaren' in der URL codiert und werden zur übergabe von Nutzer spezifischen Daten verwendet.
+
+Zum Beispiel eines Suchparameters an Google.
+
+### Anker ###
+
+Anker sind in HTML festgelegte Punkte welche die Seite mit Logischen einstiegsstellen versehen können welche in URL's referenziert werden können.
+
+Falls mich nun lediglich die Geschichte der Stadt Herborn interessiert wähle ich den Anker #Geschichte.
+
+Anker müssen jedoch vom Website entwickler in Form einer HTML-Tag ID bereitgestellt werden. 
+
