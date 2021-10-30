@@ -27,6 +27,11 @@
  * Allgemeine Definitionen
  */
 html, body {
+    /* 
+    Ich kann margin und padding nicht in einem fließtext erklären daher hier die Docs
+    https://developer.mozilla.org/de/docs/Web/CSS/margin
+    https://developer.mozilla.org/de/docs/Web/CSS/padding
+    */
     margin: 0;
     padding: 0;
 }
@@ -53,11 +58,17 @@ html {
     flex-direction: column;
 }
 
+
+/* body bescheibt den Style für alle body elemente : plottwist es gibt nur eins */
 body {
+    /* font-family beschreibt die Schriftart */
     font-family: sans-serif;
+    /* font-size setzt die Schriftgröße */
     font-size: 12pt;
 
+    /* ganz ehrlich, keine Ahnung warum das hier gesetzt wird... macht absolut keinen unterschied.*/
     flex-grow: 1;
+    /* backgroun color setzt die Hintergrundfarbe. */
     background-color: white;
 
     /* Flexbox, um den Footer nach unten zu drücken, auch wenn im <main>
@@ -71,21 +82,34 @@ body {
     align-items: stretch;
 }
 
+/* mit a werden alle a elemente angesprochen und mit a:visited werden alle styles für a's gesetzt die bereist angeklickt wurden. */
 a, a:visited {
+    /* setzt die Farbe der a Texte */
     color: black;
+    /* entfertn die für Links typische Unterstreichung */
     text-decoration: none;
 }
 
+/* beschreibt das verhalten von a elementen wenn man mit der Maus über sie fährt. */
 a:hover {
     text-decoration: underline;
 }
 
+/* 
+.{string} beschreiben Klassen. Klassen können auf belibig viele HTML elemente angewendet werden.
+Entweder man beschreibt gezielt das Element welches mann mit der Klasse styled 
+oder 
+Es werden allgemeine Sytles definiert welche in verschiedenen elementen angewendet werden können.
+*/
 .bold {
+    /* beschriebt das "gewicht" eines Textes. Damit ist zum Beispiel die Dicke des Textes  */
     font-weight: bold;
 }
 
+
 .line {
     padding: 0;
+    /*  */
     border: 0px solid lightgrey;
     border-bottom-width: 1px;
 }
