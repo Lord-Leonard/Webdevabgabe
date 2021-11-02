@@ -109,8 +109,13 @@ Es werden allgemeine Sytles definiert welche in verschiedenen elementen angewend
 
 .line {
     padding: 0;
-    /*  */
+    /* Rand. 3 Parameter
+    1. die dicke der linie: 0px 
+    2. die Art der Linie : Solid => Solide
+    3. die Farbe der Linie : Lightgrey = Leicht grau 
+     */
     border: 0px solid lightgrey;
+    /* Die Dicke des Randes, unten. */
     border-bottom-width: 1px;
 }
 
