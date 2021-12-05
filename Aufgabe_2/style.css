@@ -28,7 +28,7 @@
  */
 html, body {
     /* 
-    Ich kann margin und padding nicht in einem fließtext erklären daher hier die Docs
+    Padding verschiebt die Grenze eines Elementes. Padding schafft raum um die Grenze herum. 
     https://developer.mozilla.org/de/docs/Web/CSS/margin
     https://developer.mozilla.org/de/docs/Web/CSS/padding
     */

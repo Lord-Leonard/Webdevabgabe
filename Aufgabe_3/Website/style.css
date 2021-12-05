@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+section {
+    padding-top: 0.5rem;
+    border-top: 1px solid lightgrey;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron{
+    min-height: 50vh;
+    background-image: url(marktplatz-brieger-wide.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron > h1 {
+    visibility: hidden;
+    overflow: hidden;
+    color: bisque;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.SectionOne{
+    padding-block: 0.4rem;
+}
+
+.SectionTwo {
+    padding-inline: 1em;
+}
+
+.RoomSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.RoomCard {
+    margin: 2em;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.RoomCard > h1 {
+    margin: 0;
+    padding-block: 0.5em;
+}
+
+.RoomCard > img {
+    width: 100%;
+    height: auto;
+}
+
+.CardPic {
+    background-image: url(HotelRoomOne.jpg);
+}
+
+footer {
+    background-color: lightgray;
+    opacity: 0.6;
+}
+
+footer > div {
+    margin: 2rem;
+}
+
+@media (min-width:768px) {
+
+    .RoomSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .RoomCard {
+        width: 40%;
+    }
+
+    .jumbotron > h1 {
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        position: absolute;
+    }
+}
